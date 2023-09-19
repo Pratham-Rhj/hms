@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+
+body {
+
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Hide horizontal scroll bar */
+    zoom: 100%;
+}
+
+h5 {
+    font-family: cursive;
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+  
+  li {
+    list-style: none;
+}
+/* NAVBAR STYLING STARTS */
+.navbar {
+    position: fixed;
+    display: flex;
+    top: 0;
+    align-items:center ;
+    justify-content: space-between;
+    padding: 3px;
+    width: 100%;
+    background: linear-gradient(#445281, #344273);
+    z-index: 19;
+    color: #fff;
+    
+  }
+  
+
+  .nav-links a {
+    color: #fff;
+    font-size: 15px;
+    font-family: cursive;
+    text-decoration: none;
+    text-align: center;
+  }
+  /* LOGO */
+  .logo {
+    font-size: 32px;
+  }
+  
+  /* NAVBAR MENU */
+  .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+  }
+  
+  .menu li:hover {
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  
+  .menu li {
+    padding: 5px 14px;
+  }
+  
+
+  .services {
+    position: relative; 
+  }
+  
+  .dropdown {
+    background-color: rgb(1, 139, 139);
+    padding: 1em 0;
+    position: absolute; /*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+  }
+  
+  .dropdown li + li {
+    margin-top: 10px;
+  }
+  
+  .dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+  }
+  
+  .dropdown li:hover {
+    background-color: #4c9e9e;
+  }
+  
+  .services:hover .dropdown {
+    display: block;
+  }  
+
+.contrast{
+    background: linear-gradient(#323B66,#1F2147);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 5vh;
+    display: flex;
+    flex-direction: column;
+
+
+
+}
+.parallax {
+    background-image: url('itl.cat_night-wallpaper_2444586.png'); 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    color: #fff;
+    overflow: hidden; /* Hide overflowing text animation */
+}
+
+.title-container {
+    margin-top: 20px; 
+}
+
+.animated-text {
+    font-family: cursive;
+    font-size: 4.5ex;
+    text-shadow: 12px 5px 9px rgba(1, 2, 0, 1);
+    opacity: 0; 
+    animation: fadeIn 3s ease forwards; 
+    transform: translateX(0); 
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+/* Styling for the new parallax gradient section */
+.parallax-gradient-section {
+
+    background: url("mountains_front.png");
+    background-color: #2b1055;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    font-size: 10px;
+    flex-direction: column;
+
+    align-items: center; 
+    text-align: center; 
+    color: #fff;
+    animation: fadeIn 1s ease forwards; /* Animation for smooth fade-in */
+}
+.intro{
+    font-size: 30px;
+
+    padding-top: 50px;
+
+}
+.parallax-gradient-section p {
+    font-size: 20px;
+    padding-top: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #fff;
+    z-index: 9;
+    /* word-spacing: 31px; */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.container {
+  text-align: center;
+}
+h1 {
+  margin-left: 30px;
+  margin-bottom: 50px;
+}
+.button {
+  cursor: pointer;
+  padding-top: 5px;
+}
+
+
+
+.button-3 {
+    text-decoration: none;
+    border-width: 20px;
+    display: inline-block;
+    padding: 60px 160px;
+    border-radius: 410px;
+    background:wheat;
+    color: black;
+    font-size: 3em;
+    text-align: left;
+    transform: translateY(100px);
+}
+.button-3:hover {
+  box-shadow: 8px 8px #4d1394;
+  transition: .3s;
+} 
+
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(.9);
+  }
+    100% {
+    transform: scale(1);
+  }
+}
+
+
+.join-server a{
+  font-size: 20px;
+  color: black;
+  align-items: center;
+  
+}
+
+
+.contact-us{
+  font-family: sans-serif;
+  text-align: right;
+  padding-right: 1430px;
+}
+
+.contact-email{
+  font-family: sans-serif;
+  text-align: right;
+  padding-top: 8px;
+  padding-right: 1500%;
+}
+
+.cpr{
+  font-family: sans-serif;
+  text-align: right;
+  padding-top: 8px;
+  padding-right: 1480PX;
+}
+/* Media query for mobile devices */
+@media screen and (max-width: 600px) {
+    .animated-text {
+        padding-right: 40px;
+        font-size: 40px; /* Reduce font size for smaller screens */
+    }
+}
+@media screen and (max-width: 600px){
+    .button-3{
+        text-decoration: none;
+        border-width: 20px;
+        display: inline-block;
+        padding: 6px 10px;
+        border-radius: 41px;
+        background:wheat;
+        color: black;
+        font-size: 1em;
+        text-align: center;
+        transform: translateX(100px);
+        transform: translateY(40px);
+    }
+  
+ 
+    .contact-us{
+      font-family: sans-serif;
+
+      padding-right: 345px;
+      font-size: 7px;
+    }
+    .contact-email{
+      font-family: sans-serif;
+      text-align: right;
+      padding-top: 8px;
+      padding-right: 100%;
+      font-size: 10px;
+    }
+    .intro{
+      font-size: 30px;
+      /* position: fixed;
+      display: flex; */
+      padding-top: 50px;
+    }
+    .parallax-gradient-section p {
+      font-size: 15px;
+     /* Background color for text */
+      
+      /* margin-left: 10px;
+      margin-right: 10px; */
+      color: #fff;
+      z-index: 9;
+      text-align:center;
+      /* word-spacing: 31px; */
+      
+  }
+  .navbar {
+    position: fixed;
+    display: flex;
+    top: 0;
+    align-items:center ;
+    justify-content:flex-start;
+    padding: 3px;
+    width: 100%;
+    background: linear-gradient(#445281, #344273);
+    z-index: 19;
+    color: #fff;
+    
+  }
+  .nav-links a {
+    color: #fff;
+    font-size: 10px;
+    font-family: cursive;
+    text-decoration: none;
+    text-align: center;
+  }
+  /* LOGO */
+  .logo {
+    font-size: 10px;
+  }
+  .menu {
+    display: flex;
+    gap: 10px;
+    font-size: 10px;
+  }
+  .cre{
+    font-family: sans-serif;
+    text-align: right;
+    padding-top: 20px;
+    font-size: 7px;
+    padding-right: 60px;
+  }
+}
+

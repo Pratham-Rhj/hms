@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "img",
+			"path": "../../../Downloads/2a/parallax_web-master/moonLight/img"
+		},
+		{
+			"name": "b",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "b"
+	}
+}
